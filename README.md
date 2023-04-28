@@ -24,6 +24,10 @@ survey.survey(survey_path)
 
 # Repository organization 
 - src: contains all python src code 
+    - main.py - provides survey file path and invokes the program 
+    - survey.py - provides the action interface between the file I/O, and Survey and User classes
+    - user.py - defines the User class which stores personal attributes. ExistingUser is a subclass of User in the file that adds functionality for returning users
+    - survey_class.py - provides organization of survey, and methods for taking the survey and writing out the results
 - results: test survey results 
 - surveys: test surveys 
 
